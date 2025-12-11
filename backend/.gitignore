@@ -1,0 +1,28 @@
+# Dependencias Node
+node_modules/
+
+# Compilación de TypeScript
+dist/
+
+# Ambiente / claves
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Sistemas operativos
+.DS_Store
+Thumbs.db
+
+# VSCode y configuraciones locales
+.vscode/
+*.code-workspace
+
+# Archivos temporales
+*.tmp
+*.temp
