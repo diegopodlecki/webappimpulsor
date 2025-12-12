@@ -1,21 +1,21 @@
 import React from 'react';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import Contact from './components/Contact';
-import Chatbot from './components/Chatbot';
-import WhatsAppButton from './components/WhatsAppButton';
+import Heroe from './components/Heroe';
+import Servicios from './components/Servicios';
+import Contacto from './components/Contacto';
+import AsistenteVirtual from './components/AsistenteVirtual';
+import BotonWhatsApp from './components/BotonWhatsApp';
 import './App.css';
 
-function App() {
+function Aplicacion() {
   return (
     <div className="App">
-      <Hero />
-      <Services />
-      <Contact />
-      <Chatbot />
-      <WhatsAppButton />
+      <Heroe />
+      <Servicios />
+      <Contacto />
+      <AsistenteVirtual />
+      <BotonWhatsApp />
     </div>
   );
 }
 
-export default App;
+export default Aplicacion;

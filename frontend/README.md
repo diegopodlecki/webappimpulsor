@@ -1,16 +1,17 @@
-# React + Vite
+# Frontend de la Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este directorio contiene el código fuente para el frontend de la landing page. Es una aplicación de React creada con Vite.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El frontend proporciona la interfaz de usuario para la landing page, incluyendo:
 
-## React Compiler
+-   Un encabezado atractivo (Hero).
+-   Una sección que describe los servicios ofrecidos.
+-   Un formulario de contacto para capturar prospectos.
+-   Un chatbot flotante para la interacción con el usuario.
+-   Un botón flotante de WhatsApp para una comunicación rápida.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Configuración
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Para instrucciones detalladas sobre cómo configurar y ejecutar el proyecto, por favor consulta el `README.md` principal en el directorio raíz del proyecto.

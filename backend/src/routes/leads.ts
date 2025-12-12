@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { createLead } from '../controllers/leadsController';
+import { crearProspecto } from '../controllers/leadsController';
 
 const router = Router();
 
-router.post('/leads', createLead);
+router.post('/prospectos', crearProspecto);
 
 export default router;

@@ -1,44 +1,59 @@
-# Modern Landing Page Project
+# Proyecto de Landing Page Moderna
 
-This project is a modern landing page for a digital services agency, featuring a chatbot, a WhatsApp link, and Supabase integration for lead capture.
+Este proyecto es una landing page moderna para una agencia de servicios digitales, que incluye un chatbot, un enlace a WhatsApp e integración con Supabase para la captura de prospectos.
 
-## Setup
+## Configuración
+
+### Supabase
+
+1.  Crea un nuevo proyecto en [Supabase](https://supabase.com/).
+2.  Ve a la sección "SQL Editor" y ejecuta la siguiente consulta para crear la tabla `prospectos`:
+    ```sql
+    CREATE TABLE prospectos (
+      id SERIAL PRIMARY KEY,
+      nombre TEXT NOT NULL,
+      email TEXT NOT NULL,
+      mensaje TEXT NOT NULL,
+      created_at TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL
+    );
+    ```
 
 ### Backend
 
-1.  Navigate to the `backend` directory:
+1.  Navega al directorio `backend`:
     ```bash
     cd backend
     ```
-2.  Install the dependencies:
+2.  Instala las dependencias:
     ```bash
     npm install
     ```
-3.  Create a `.env` file in the `backend` directory and add your Supabase credentials:
+3.  Crea un archivo `.env` en el directorio `backend` y agrega tus credenciales de Supabase:
     ```env
-    SUPABASE_URL=YOUR_SUPABASE_URL
-    SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
+    SUPABASE_URL=TU_URL_DE_SUPABASE
+    SUPABASE_ANON_KEY=TU_CLAVE_ANON_DE_SUPABASE
     ```
-4.  Start the backend server:
+4.  Inicia el servidor del backend:
     ```bash
     npm run dev
     ```
 
 ### Frontend
 
-1.  Navigate to the `frontend` directory:
+1.  Navega al directorio `frontend`:
     ```bash
     cd frontend
     ```
-2.  Install the dependencies:
+2.  Instala las dependencias:
     ```bash
     npm install
     ```
-3.  Create a `.env` file in the `frontend` directory and add your WhatsApp phone number:
+3.  Crea un archivo `.env` en el directorio `frontend` y agrega tu número de teléfono de WhatsApp y la URL de la API:
     ```env
-    VITE_WHATSAPP_PHONE_NUMBER=YOUR_WHATSAPP_PHONE_NUMBER
+    VITE_WHATSAPP_PHONE_NUMBER=TU_NUMERO_DE_TELEFONO_DE_WHATSAPP
+    VITE_API_URL=http://localhost:3000/api
     ```
-4.  Start the frontend development server:
+4.  Inicia el servidor de desarrollo del frontend:
     ```bash
     npm run dev
     ```
