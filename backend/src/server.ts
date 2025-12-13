@@ -1,16 +1,12 @@
-import express from "express";
-import cors from "cors";
+import express from 'express';
+import cors from 'cors';
+import leadsRouter from './routes/leads';
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.json({
-    status: "OK",
-    message: "Backend WebAppImpulsor funcionando correctamente"
-  });
-});
+app.use('/api', leadsRouter);
 
 const PORT = 3000;
 app.listen(PORT, () => {
